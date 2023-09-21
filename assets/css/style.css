@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Quicksand:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Josefin Sans';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    position: fixed;
+    height: 3rem;
+    width: 18rem;
+    background-color: rgb(243, 51, 34);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 999;
+}
+
+header nav a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: rgb(243, 51, 34);
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+.jumbotron {
+    display: inline;
+    width: 100%;
+    height: 70vh;
+    background-image: url('/assets/img/jumbotron.jpg');
+}
+
+.black {
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.black img {
+    width: 400px;
+}
+
+.black p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+main {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.content article {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 3px rgb(243, 51, 34);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.deskripsi-tokoh {
+    display: flex;
+    gap: 10px;
+}
+
+.deskripsi-tokoh img {
+    width: 100px;
+    border-radius: 25%;
+}
+
+aside {
+    flex: .6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 50vh;
+    border-top: 1px solid rgb(243, 51, 34);
+    border-bottom: 1px solid rgb(243, 51, 34);
+    border-right: 2px solid rgb(243, 51, 34);
+    border-left: 2px solid rgb(243, 51, 34);
+}
+
+aside img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+aside table tr th {
+    text-align: left;
+    padding-right: 5px;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(243, 51, 34);
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1400px) {
+    .content article section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nama-tokoh {
+        align-self: center;
+    }
+    
+    .deskripsi-tokoh {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        order: -1;
+        width: 25rem;
+        padding: 20px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .black img {
+        width: 300px;
+    }
+
+    .black p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    aside {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .black img {
+        width: 300px;
+    }
+
+    .black p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .black img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    main {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    aside img {
+        width: 150px
+    }
+
+    aside table tr th,
+    aside table tr td {
+        font-size: 11px;
+    }
+}
