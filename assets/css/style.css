@@ -63,7 +63,7 @@ header nav a:hover {
     display: inline;
     width: 100%;
     height: 70vh;
-    background-image: url('/one-piece/assets/img/jumbotron.jpg');
+    background-image: url('https://danielsahelangi31.github.io/one-piece/assets/img/jumbotron.jpg');
 }
 
 .black {
